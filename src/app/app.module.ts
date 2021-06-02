@@ -24,9 +24,11 @@ import { environment } from '../environments/environment';
 import { AuthService } from "./shared/services/auth.service";
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 
 
@@ -40,7 +42,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     VerifyEmailComponent,
     TrainersListComponent,
     UserProfileComponent,
-    TrainerPageComponent
+    TrainerPageComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
+
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

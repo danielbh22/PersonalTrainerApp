@@ -8,14 +8,29 @@
   </mat-card-header>
   <img mat-card-image src={{trainerData.photoURL}}>
   <mat-card-content>
+    <h4>City:</h4>
+    <p>
+            {{trainerData.city}}
+    </p>
+    <h4>Age:</h4>
+    <p>
+            {{trainerData.age}}
+    </p>
     <h4>About Me:</h4>
     <p>
             {{trainerData.about}}
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-stroked-button color="primary">SEND MASSEGE</button>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button mat-stroked-button color="primary"><span class="material-icons">
+      message
+      </span></button>
+    <button mat-button><span class="material-icons">
+      favorite
+      </span></button>
+    <button mat-button><span class="material-icons">
+      share
+      </span>
+      </button>
   </mat-card-actions>
 </mat-card>

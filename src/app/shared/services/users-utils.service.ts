@@ -45,6 +45,8 @@ export class UsersUtilsService {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
+      age: user.age,
+      city: user.city,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
       isTrainer: user.isTrainer,
@@ -68,13 +70,15 @@ export class UsersUtilsService {
               let uidVal = user.data().uid;
               let emailVal = user.data().email;
               let displayNameVal = user.data().displayName;
+              let ageVal = user.data().age;
+              let cityVal = user.data().city;
               let photoURLVal = user.data().photoURL;
               let emailVerifiedVal = user.data().emailVerified;
               let isTrainerVal = user.data().isTrainer;
               let aboutVal = user.data().about;
 
 
-              let obj = {uid : uidVal, email : emailVal ,displayName : displayNameVal , photoURL : photoURLVal , emailVerified : emailVerifiedVal, isTrainer : isTrainerVal , about : aboutVal}
+              let obj = {uid : uidVal, email : emailVal ,displayName : displayNameVal ,age : ageVal , city : cityVal , photoURL : photoURLVal , emailVerified : emailVerifiedVal, isTrainer : isTrainerVal , about : aboutVal}
 
               tempUsers.push(obj)
             }
@@ -98,13 +102,15 @@ export class UsersUtilsService {
               let uidVal = user.data().uid;
               let emailVal = user.data().email;
               let displayNameVal = user.data().displayName;
+              let ageVal = user.data().age;
+              let cityVal = user.data().city;
               let photoURLVal = user.data().photoURL;
               let emailVerifiedVal = user.data().emailVerified;
               let isTrainerVal = user.data().isTrainer;
               let aboutVal = user.data().about;
 
 
-              let obj = {uid : uidVal, email : emailVal ,displayName : displayNameVal , photoURL : photoURLVal , emailVerified : emailVerifiedVal, isTrainer : isTrainerVal , about : aboutVal}
+              let obj = {uid : uidVal, email : emailVal ,age : ageVal , city : cityVal ,displayName : displayNameVal , photoURL : photoURLVal , emailVerified : emailVerifiedVal, isTrainer : isTrainerVal , about : aboutVal}
 
               tempUsers.push(obj)
             }

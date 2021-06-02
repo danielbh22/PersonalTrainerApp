@@ -109,11 +109,13 @@ SendVerificationMail() {
     const userData: User = {
       uid: user.uid,
       email: user.email,
+      age: user.age,
+      city: user.city,
       displayName: user.displayName,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
-      isTrainer: user.isTrainer,
-      about :user.about
+      isTrainer: false,
+      about :""
     }
     return userRef.set(userData, {
       merge: true
